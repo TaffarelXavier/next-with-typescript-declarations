@@ -1,7 +1,6 @@
-import { IButton } from "ButtonModule";
 import { NextPage } from 'next'
 
-const FormExample: NextPage<IButton> = ({ name }) => {
+const FormExample: NextPage<API.InfoRequest> = ({ id }) => {
 
     const onSubmit = (e: React.SyntheticEvent): void => {
         e.preventDefault();
@@ -18,7 +17,6 @@ const FormExample: NextPage<IButton> = ({ name }) => {
         <form
             onSubmit={onSubmit}
         >
-            {name}
             <div>
                 <label>
                     Email:
