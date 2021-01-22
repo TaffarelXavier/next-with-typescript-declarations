@@ -22,15 +22,9 @@ const App: NextPage = () => {
     <>
       <div>
         <h1>Taffarel</h1>
-        {(products || []).map((el: API.Product) => (
-          <div key={el.id}>
-            <pre>{JSON.stringify(el.name, null, 2)}</pre>
-          </div>
-        ))}
-
         {users?.map((el) => (
           <div key={el.id}>
-            {/* <pre>{JSON.stringify(el, null, 2)}</pre> */}
+            <pre>{JSON.stringify(el, null, 2)}</pre>
           </div>
         ))}
       </div>
